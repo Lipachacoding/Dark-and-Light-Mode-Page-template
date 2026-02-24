@@ -1,0 +1,82 @@
+/*General Styling*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: backgroung-color 0.5s ease, color 0.4s ease;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    color: rgb(21, 21, 21);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    padding:20px;
+    border-radius: 10px;
+    transition: background-color o.4s ease, box-shadow 0.4s ease;
+}
+
+button{
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*light mode */
+.light-mode{
+    background-color: #f4f9fb;
+    color: #161616;
+}
+
+.light-mode header{
+    background-color: #f1eeee;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+.light-mode .card{
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.light-mode button{
+    background-color: #0077b6;
+    color: white;
+}
+
+/*Dark mode (night shirft Theme) */
+.dark-mode{
+    background-color: #3d546a;
+    color: #e0fbfc;
+}
+
+.dark-mode header {
+    background-color: #646f98;   
+}
+
+.dark-mode .card {
+    background-color: #1b263b;
+    box-shadow: 0 0 10px ragba(0, 183, 255, 0.6);
+}
+
+.dark-mode button {
+    background-color: #00b4d8;
+    color: #0d1b2a;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
